@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C2B9DA5A2817C43100CD9442 /* SF-Pro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C2B9DA592817C43100CD9442 /* SF-Pro.ttf */; };
 		C2BA17192817C01B006C8A51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BA17182817C01B006C8A51 /* AppDelegate.swift */; };
 		C2BA171B2817C01B006C8A51 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BA171A2817C01B006C8A51 /* SceneDelegate.swift */; };
 		C2BA171D2817C01B006C8A51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BA171C2817C01B006C8A51 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C2B9DA592817C43100CD9442 /* SF-Pro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro.ttf"; path = "../../../../MC1-Group12/MC1-Group12/fonts/SF-Pro.ttf"; sourceTree = "<group>"; };
 		C2BA17152817C01B006C8A51 /* VicaNanoWeer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VicaNanoWeer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2BA17182817C01B006C8A51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2BA171A2817C01B006C8A51 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C2B9DA582817C3B100CD9442 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				C2B9DA592817C43100CD9442 /* SF-Pro.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 		C2BA170C2817C01B006C8A51 = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +72,7 @@
 				C2BA171A2817C01B006C8A51 /* SceneDelegate.swift */,
 				C2BA171C2817C01B006C8A51 /* ViewController.swift */,
 				C2BA171E2817C01B006C8A51 /* Main.storyboard */,
+				C2B9DA582817C3B100CD9442 /* Font */,
 				C2BA17242817C01C006C8A51 /* Assets.xcassets */,
 				C2BA17262817C01C006C8A51 /* LaunchScreen.storyboard */,
 				C2BA17292817C01C006C8A51 /* Info.plist */,
@@ -129,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2BA17282817C01C006C8A51 /* LaunchScreen.storyboard in Resources */,
+				C2B9DA5A2817C43100CD9442 /* SF-Pro.ttf in Resources */,
 				C2BA17252817C01C006C8A51 /* Assets.xcassets in Resources */,
 				C2BA17202817C01B006C8A51 /* Main.storyboard in Resources */,
 			);
@@ -294,6 +306,7 @@
 				DEVELOPMENT_TEAM = 8F64K5MPSU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = VicaNanoWeer/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Weer;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -322,6 +335,7 @@
 				DEVELOPMENT_TEAM = 8F64K5MPSU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = VicaNanoWeer/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Weer;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

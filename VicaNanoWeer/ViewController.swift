@@ -94,7 +94,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        // Selected Storage Category
+        // Selected StorageCategory
         let StorageCategory = self.items![indexPath.row]
         
         // Create alert
@@ -110,7 +110,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             // Get the textfield for the alert
             let textField = alert.textFields![0]
             
-            // Edit name property of person object
+            // Edit name property of StorageCategory object
             StorageCategory.name = textField.text
             
             // Save the data
@@ -137,13 +137,13 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         // Create swipe action
         let action = UIContextualAction(style: .destructive, title: "Delete") { (action, view, completionHandler) in
             
-            // Which person to remove
+            // Which Storage Category to remove
             let storagecategoryToRemove = self.items![indexPath.row]
             
-            // Remove the person
+            // Remove the Storage Category
             self.context.delete(storagecategoryToRemove)
             
-            // Save the data
+            // Save data
             do {
                 try self.context.save()
             } catch {

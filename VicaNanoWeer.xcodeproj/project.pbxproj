@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		C2B9DA5A2817C43100CD9442 /* SF-Pro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C2B9DA592817C43100CD9442 /* SF-Pro.ttf */; };
+		C2B9DA5D2817E02800CD9442 /* StorageCategory+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B9DA5B2817E02800CD9442 /* StorageCategory+CoreDataClass.swift */; };
+		C2B9DA5E2817E02800CD9442 /* StorageCategory+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B9DA5C2817E02800CD9442 /* StorageCategory+CoreDataProperties.swift */; };
 		C2BA17192817C01B006C8A51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BA17182817C01B006C8A51 /* AppDelegate.swift */; };
 		C2BA171B2817C01B006C8A51 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BA171A2817C01B006C8A51 /* SceneDelegate.swift */; };
 		C2BA171D2817C01B006C8A51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BA171C2817C01B006C8A51 /* ViewController.swift */; };
@@ -19,6 +21,8 @@
 
 /* Begin PBXFileReference section */
 		C2B9DA592817C43100CD9442 /* SF-Pro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro.ttf"; path = "../../../../MC1-Group12/MC1-Group12/fonts/SF-Pro.ttf"; sourceTree = "<group>"; };
+		C2B9DA5B2817E02800CD9442 /* StorageCategory+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StorageCategory+CoreDataClass.swift"; sourceTree = "<group>"; };
+		C2B9DA5C2817E02800CD9442 /* StorageCategory+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StorageCategory+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		C2BA17152817C01B006C8A51 /* VicaNanoWeer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VicaNanoWeer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2BA17182817C01B006C8A51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2BA171A2817C01B006C8A51 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +53,15 @@
 			path = Font;
 			sourceTree = "<group>";
 		};
+		C2B9DA5F2817E04D00CD9442 /* StorageCategory */ = {
+			isa = PBXGroup;
+			children = (
+				C2B9DA5B2817E02800CD9442 /* StorageCategory+CoreDataClass.swift */,
+				C2B9DA5C2817E02800CD9442 /* StorageCategory+CoreDataProperties.swift */,
+			);
+			path = StorageCategory;
+			sourceTree = "<group>";
+		};
 		C2BA170C2817C01B006C8A51 = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +81,7 @@
 		C2BA17172817C01B006C8A51 /* VicaNanoWeer */ = {
 			isa = PBXGroup;
 			children = (
+				C2B9DA5F2817E04D00CD9442 /* StorageCategory */,
 				C2BA17182817C01B006C8A51 /* AppDelegate.swift */,
 				C2BA171A2817C01B006C8A51 /* SceneDelegate.swift */,
 				C2BA171C2817C01B006C8A51 /* ViewController.swift */,
@@ -154,7 +168,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2BA171D2817C01B006C8A51 /* ViewController.swift in Sources */,
+				C2B9DA5E2817E02800CD9442 /* StorageCategory+CoreDataProperties.swift in Sources */,
 				C2BA17192817C01B006C8A51 /* AppDelegate.swift in Sources */,
+				C2B9DA5D2817E02800CD9442 /* StorageCategory+CoreDataClass.swift in Sources */,
 				C2BA171B2817C01B006C8A51 /* SceneDelegate.swift in Sources */,
 				C2BA17232817C01B006C8A51 /* VicaNanoWeer.xcdatamodeld in Sources */,
 			);

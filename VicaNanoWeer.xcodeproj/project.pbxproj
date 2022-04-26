@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C203618A2818464C008F6AD4 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20361892818464C008F6AD4 /* CategoryViewController.swift */; };
 		C2B9DA5A2817C43100CD9442 /* SF-Pro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C2B9DA592817C43100CD9442 /* SF-Pro.ttf */; };
 		C2B9DA5D2817E02800CD9442 /* StorageCategory+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B9DA5B2817E02800CD9442 /* StorageCategory+CoreDataClass.swift */; };
 		C2B9DA5E2817E02800CD9442 /* StorageCategory+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B9DA5C2817E02800CD9442 /* StorageCategory+CoreDataProperties.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C20361892818464C008F6AD4 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		C2B9DA592817C43100CD9442 /* SF-Pro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro.ttf"; path = "../../../../MC1-Group12/MC1-Group12/fonts/SF-Pro.ttf"; sourceTree = "<group>"; };
 		C2B9DA5B2817E02800CD9442 /* StorageCategory+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StorageCategory+CoreDataClass.swift"; sourceTree = "<group>"; };
 		C2B9DA5C2817E02800CD9442 /* StorageCategory+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StorageCategory+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -45,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C203618C28184693008F6AD4 /* CategoryDetails */ = {
+			isa = PBXGroup;
+			children = (
+				C20361892818464C008F6AD4 /* CategoryViewController.swift */,
+			);
+			path = CategoryDetails;
+			sourceTree = "<group>";
+		};
 		C2B9DA582817C3B100CD9442 /* Font */ = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				C2B9DA5F2817E04D00CD9442 /* StorageCategory */,
+				C203618C28184693008F6AD4 /* CategoryDetails */,
 				C2BA17182817C01B006C8A51 /* AppDelegate.swift */,
 				C2BA171A2817C01B006C8A51 /* SceneDelegate.swift */,
 				C2BA171C2817C01B006C8A51 /* ViewController.swift */,
@@ -169,6 +180,7 @@
 			files = (
 				C2BA171D2817C01B006C8A51 /* ViewController.swift in Sources */,
 				C2B9DA5E2817E02800CD9442 /* StorageCategory+CoreDataProperties.swift in Sources */,
+				C203618A2818464C008F6AD4 /* CategoryViewController.swift in Sources */,
 				C2BA17192817C01B006C8A51 /* AppDelegate.swift in Sources */,
 				C2B9DA5D2817E02800CD9442 /* StorageCategory+CoreDataClass.swift in Sources */,
 				C2BA171B2817C01B006C8A51 /* SceneDelegate.swift in Sources */,

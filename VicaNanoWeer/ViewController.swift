@@ -97,7 +97,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         // Selected StorageCategory
         let StorageCategory = self.items![indexPath.row]
         
-        // Create alert
+        // Create alert -> move to next page
         let alert = UIAlertController(title: "Edit Storage Category", message: "Edit storage name", preferredStyle: .alert)
         alert.addTextField()
         

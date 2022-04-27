@@ -8,7 +8,11 @@
 import UIKit
 
 class CategoryViewController: UIViewController {
-   
+    
+   // custom cell category details
+    @IBOutlet weak var itemsView: UITableView!
+    
+    
     @IBOutlet weak var categoryTitle: UILabel!
     
     var titleLabel = ""

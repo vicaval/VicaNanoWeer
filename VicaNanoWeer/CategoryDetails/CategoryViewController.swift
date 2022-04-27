@@ -8,11 +8,15 @@
 import UIKit
 
 class CategoryViewController: UIViewController {
-
+   
+    @IBOutlet weak var categoryTitle: UILabel!
+    
+    var titleLabel = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        categoryTitle.text = titleLabel
     }
     
 

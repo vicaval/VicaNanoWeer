@@ -23,7 +23,8 @@ class ViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
             
-        }
+        fetchStorageCategory()
+    }
     
     func fetchStorageCategory() {
         
@@ -92,44 +93,26 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
+    // prepare segue
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if segue.identifier == "toCategoryDetailsView" {
+                if let indexpath = tableView.indexPathForSelectedRow{
+                    
+                    // manggil screen2
+                    let detailVC = segue.destination as? CategoryViewController
+                    detailVC?.titleLabel = items![indexpath.row].name!
+                }
+               
+            }
+        }
+    
+    // SELECT ROW
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+       
+        // pindah segue
+        performSegue(withIdentifier: "toCategoryDetailsView", sender: self)
         
-//        // Selected StorageCategory
-//        let StorageCategory = self.items![indexPath.row]
-//
-//        // Create alert -> move to next page
-//        let alert = UIAlertController(title: "Edit Storage Category", message: "Edit storage name", preferredStyle: .alert)
-//        alert.addTextField()
-//
-//        let textField = alert.textFields![0]
-//        textField.text = StorageCategory.name
-//
-//        // Configure button handler
-//        let saveButton = UIAlertAction(title: "Save", style: .default) { (action) in
-//
-//            // Get the textfield for the alert
-//            let textField = alert.textFields![0]
-//
-//            // Edit name property of StorageCategory object
-//            StorageCategory.name = textField.text
-//
-//            // Save the data
-//            do {
-//                try self.context.save()
-//            } catch {
-//
-//            }
-//
-//            // Re-fetch the data
-//            self.fetchStorageCategory()
-//
-//        }
-//
-//        // Add button
-//        alert.addAction(saveButton)
-//
-//        // Show alert
-//        self.present(alert, animated: true)
+        
     }
     
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {

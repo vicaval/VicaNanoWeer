@@ -51,8 +51,8 @@ class ViewController: UIViewController {
             let textField = alert.textFields![0]
             
             // Create object
-            let newPerson = StorageCategory(context: self.context)
-            newPerson.name = textField.text
+            let newCategory = StorageCategory(context: self.context)
+            newCategory.name = textField.text
             
             // Save data
             do {

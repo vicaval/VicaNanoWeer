@@ -11,6 +11,7 @@ class CategoryViewController: UIViewController {
     
    // custom cell category details
     @IBOutlet weak var itemsView: UITableView!
+    @IBOutlet weak var itemsTableView: UITableView!
     
     
     @IBOutlet weak var categoryTitle: UILabel!
@@ -21,6 +22,9 @@ class CategoryViewController: UIViewController {
         super.viewDidLoad()
 
         categoryTitle.text = titleLabel
+        
+        // custom table view
+        
     }
     
 

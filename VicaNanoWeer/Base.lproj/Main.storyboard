@@ -138,7 +138,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CustomCell" rowHeight="79" id="67r-z4-EP1">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CustomCell" rowHeight="79" id="67r-z4-EP1" customClass="CustomTableViewCell" customModule="VicaNanoWeer" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="79"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="67r-z4-EP1" id="xgS-og-Y2t">
@@ -166,6 +166,10 @@
                                                 <constraint firstItem="Nf0-tc-3hI" firstAttribute="top" secondItem="xgS-og-Y2t" secondAttribute="top" constant="5" id="RT8-yy-ZeO"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="itemsLabel" destination="5Zh-ap-hIi" id="ZJB-WQ-39N"/>
+                                            <outlet property="itemsView" destination="xgS-og-Y2t" id="ejr-gT-PSZ"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -176,6 +180,7 @@
                     <navigationItem key="navigationItem" id="WGc-wr-xFq"/>
                     <connections>
                         <outlet property="categoryTitle" destination="Rud-96-2xe" id="OIW-le-YzK"/>
+                        <outlet property="itemsTableView" destination="kzS-zE-Op7" id="dhy-PD-jhd"/>
                         <outlet property="itemsView" destination="kzS-zE-Op7" id="7K3-3L-LkL"/>
                     </connections>
                 </viewController>
